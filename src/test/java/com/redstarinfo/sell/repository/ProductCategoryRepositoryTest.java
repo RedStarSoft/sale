@@ -23,7 +23,8 @@ public class ProductCategoryRepositoryTest {
     @Test
     public void saveTest() {
         ProductCategory productCategory = new ProductCategory();
-        productCategory.setCategoryName("女生最爱");
+        productCategory.setCategoryId(2);
+        productCategory.setCategoryName("男生最爱");
         productCategory.setCategoryType(3);
         repository.save(productCategory);
     }
