@@ -10,10 +10,14 @@ pipeline {
                 '''
             }
         }
-
         stage('Test') {
             steps {
                 sh 'echo "Fail!"; exit 0'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying'
             }
         }
     }
